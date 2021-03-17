@@ -1,0 +1,3 @@
+SELECT SQLITE_RENAME_TABLE(0,0);
+SELECT SQLITE_RENAME_TABLE(00,20);
+SELECT SQLITE_RENAME_TABLE('2001-01>>>>>>>>>> >>>>>>>>>:memory:>>>LhC#>>>>>>>>>>>>>>:memory:>>>LhCT SQLITE_RENAME_TABL>>>>-01f00', '00');

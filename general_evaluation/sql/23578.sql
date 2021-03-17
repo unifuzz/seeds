@@ -1,0 +1,10 @@
+CREATE TABLE t1(a,INT,b,INTEGER, c TEXT, d BLOB, e,ANY,
+    UNI a,ba) ON CONFLICT ignore,
+    PRIMARY KEY(b),
+    UNIQUE(c) ON CONFLICT fail
+) WITHOUT ROWID;
+CREATE INDEX t1d ON t1(d);
+CREATE UNIQUE INDEX t1e ON t1(e);
+INSERT INTO t1(a,b,c,d,e) VALUES(1,2,'abc','b3',3.5);
+INSERT INTO t1 VALUES(2,2,'xyz',NULL,4.25)
+ON CONFLICT(b) DO UPDATE SET e=max(e,excd.e);
